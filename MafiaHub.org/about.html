@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MafiaHub</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/mafia.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-close" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT ME</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Alex Jackson</h1>
+    </section>
+
+    <!------- about us content -------->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>Cyber Security Inthuist</h1>
+          <p></p>
+        </div>
+        <div class="about-col">
+          <img src="images/AJ.jpg" />
+        </div>
+      </div>
+    </section>
+
+    <div>
+      <h3>
+        Born and raised in the U.S. of A. I have spent the last decade wasting
+        away until I finally found something I could enjoy. Diving into
+        networking and cyber security has been such a blessing and allowed me to
+        grow in ways I didn't know I could. I look forward to this journey!!!!
+      </h3>
+    </div>
+
+    <!-------- footer ---------->
+
+    <section class="footer">
+      <h4>Contact</h4>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>made with <i class="fa fa-heart-o"></i> by Easy Tutorials</p>
+    </section>
+
+    <!----JavaScript for toggle menu---->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
